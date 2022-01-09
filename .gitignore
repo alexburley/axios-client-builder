@@ -1,0 +1,6 @@
+# package directories
+node_modules
+.DS_STORE
+coverage/
+dist
+tmp/**
