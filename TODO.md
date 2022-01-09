@@ -1,0 +1,14 @@
+-   TSDoc
+-   .addDefaultHeader(key, value) synchronous
+-   .addDefaultHeader(key, value) asynchronous
+-   .addAuthorizationHeader(fn) synchronous
+-   .addAuthorizationHeader(fn) asynchronous
+-   .addErrorHandling(statuses[], fn[])
+-   .addRequestLogging(logger) // Log4J typing and customise what gets logged
+-   .addErrorLogging(logger) // Log any request error that does not match axios validateStatus
+-   CICD
+-   Release Tagging
+-   Examples folder
+-   Auto fail if we handled duplicate statuscodes
+-   Typescript best practices
+-   Dependabot

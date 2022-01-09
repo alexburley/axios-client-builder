@@ -62,10 +62,11 @@ const client = new ClientBuilder({
     config: { baseURL: env.getUrl() }, // OPTIONAL Axios config object
 })
     .addDefaultHeader(key, value)
+    .addDefaultHeader(key, fn)
+    .addAuthorizationHeader(fn)
     .addErrorHandling(statuses[], fn[])
     .addRequestLogging(logger) // Log requests and timing of requests
     .addErrorLogging(logger) // Log any request error that does not match axios validateStatus
-    .addAuthorization(() => createAuthSignature()) // Add a dynamic auth on each request
     .build();
 ```
 
